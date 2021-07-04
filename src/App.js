@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/Header';
 import Jumbotron from './components/Jumbotron';
 import History from './components/History';
+import Gallery from './components/Gallery';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Jumbotron />
       <History />
+      <Gallery />
     </div>
   );
 }

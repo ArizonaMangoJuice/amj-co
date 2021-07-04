@@ -134,8 +134,38 @@ code {
 .history{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 80px;
   max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+/* .history::before{
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  height: 0px;
+  width: 0px;
+  background-color: transparent;
+  border: 300px solid transparent;
+  border-bottom: 320px solid rgba(114, 9, 183, 0.2);
+  z-index: -99;
+} */
+
+.history::after{
+  position: absolute;
+  content: '';
+  right: 0;
+  top: 0;
+  height: 0px;
+  width: 0px;
+  background-color: transparent;
+  border: 300px solid transparent;
+  border-top: 320px solid rgba(114, 9, 183, 0.2);
+  z-index: -99;
 }
 
 .history-image {
@@ -144,12 +174,12 @@ code {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
   /* border: 1px solid red; */
-  height: 550px;
+  height: 450px;
   padding: 20px;
 }
 
 .history-image-block{
-  /* height: 450px; */
+  height: 450px;
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -176,7 +206,7 @@ code {
 
 .history-text{
   width: 50%;
-  height: 550px;
+  /* height: 450px; */
   padding: 40px;
 }
 
@@ -260,4 +290,61 @@ code {
   transition: .3s;
   color: white;
   z-index: 99;
+}
+
+.gallery-title{
+  width: 100%;
+}
+
+.gallery-title-container{
+  /* margin-top: -95px; */
+  font-size: 42px;
+  font-weight: bold;
+  color: var(--main-color);
+  margin-bottom: 40px;
+}
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  row-gap: 5px;
+  column-gap: 5px;
+  /* height: 650px; */
+  max-width: 1200px;
+  margin: auto;
+}
+
+.gallery-img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.gallery-img-1{
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 12;
+}
+
+.gallery-img-2{
+  grid-column-start: 8;
+  grid-column-end: 14;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.gallery-img-3{
+  grid-column-start: 8;
+  grid-column-end: 11;
+  grid-row-start: 4;
+  grid-row-end: 12;
+}
+
+.gallery-img-4{
+  grid-column-start:11;
+  grid-column-end: 14;
+  grid-row-start: 4;
+  grid-row-end: 12;
 }

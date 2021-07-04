@@ -2,6 +2,7 @@ import React from 'react';
 
 const History = props => {
     return (
+        <>
         <section className='history'>
             <section className='history-image'>
                 <img className='image-1 history-image-block' src='https://images.unsplash.com/photo-1611256498632-937c79823ec3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=664&q=80' />
@@ -15,6 +16,10 @@ const History = props => {
                 </section>
             </section>
         </section>
+        <section className='gallery-title-container'>
+            <h1 className='gallery-title'>JUST SHOWIN’ OFF … OUR WORK, THAT IS!</h1>
+        </section>
+        </>
     )
 }
 
