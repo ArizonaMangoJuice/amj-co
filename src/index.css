@@ -412,3 +412,41 @@ code {
   font-weight: bold;
   color: var(--main-color);
 }
+
+/* higher Image container */
+.higher-image-container{
+  display: flex;
+  max-width: 1200px;
+  /* background-color: rgb(114 9 183 / 30%); */
+  margin: 150px auto;
+  position: relative;
+  height: 750px;
+}
+
+.higher-image-info{
+  padding: 0px 50px;
+  width: 50%;
+}
+
+.higher-image-info-title{
+  text-align: left;
+}
+
+.higher-image-info-p{
+  margin-top: 30px;
+  padding: 5px;
+  font-size: 18px;
+  line-height: 2rem;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.higher-image-img{
+  position: absolute;
+  top: -80px;
+  right: 0;
+  height: 100%;
+  width: 40%;
+  object-fit: cover;
+  box-shadow: -5px 5px 10px 1px rgb(114 9 183 / 30%);
+}
