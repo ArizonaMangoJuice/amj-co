@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Jumbotron from './components/Jumbotron';
 import History from './components/History';
 import Gallery from './components/Gallery';
+import GreatBuilder from './components/GreatBuilder/GreatBuilder';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Jumbotron />
       <History />
       <Gallery />
+      <GreatBuilder />
     </div>
   );
 }
