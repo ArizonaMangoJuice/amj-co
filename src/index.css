@@ -450,3 +450,15 @@ code {
   object-fit: cover;
   box-shadow: -5px 5px 10px 1px rgb(114 9 183 / 30%);
 }
+
+footer{
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(114 9 183 / 10%);
+}
+
+.footer-title{
+  font-size: 28px;
+}

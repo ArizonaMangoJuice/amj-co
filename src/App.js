@@ -5,6 +5,7 @@ import History from './components/History';
 import Gallery from './components/Gallery';
 import GreatBuilder from './components/GreatBuilder/GreatBuilder';
 import HigherImageContainer from './components/HigherImageContainer';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Gallery />
       <GreatBuilder />
       <HigherImageContainer />
+      <Footer />
     </div>
   );
 }
